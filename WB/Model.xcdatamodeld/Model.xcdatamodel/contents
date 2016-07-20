@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7549" systemVersion="14B25" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Aircraft" representedClassName="Aircraft" syncable="YES">
+        <attribute name="aircraftAftcargoarm" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="aircraftAftlimit" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="aircraftEmptymom" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="aircraftEmptyweight" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="aircraftFuelarm" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="aircraftFwdlimit" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="aircraftFwdlimitgross" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="aircraftFwdlimitwt" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="aircraftMaxgross" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="aircraftName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="aircraftPodarm" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="aircraftRow1arm" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="aircraftRow2arm" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="aircraftRow3arm" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Aircraft" positionX="-63" positionY="-18" width="128" height="255"/>
+    </elements>
+</model>

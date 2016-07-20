@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A102EBC71B006BFB00646844 /* comChart.m in Sources */ = {isa = PBXBuildFile; fileRef = A102EBC61B006BFB00646844 /* comChart.m */; };
+		A102EBCA1B007A6F00646844 /* GlobalVars.m in Sources */ = {isa = PBXBuildFile; fileRef = A102EBC91B007A6F00646844 /* GlobalVars.m */; };
 		A1C9174D1AF60266002EBAFE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1C9174C1AF60266002EBAFE /* Foundation.framework */; };
 		A1C9174F1AF60266002EBAFE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1C9174E1AF60266002EBAFE /* CoreGraphics.framework */; };
 		A1C917511AF60266002EBAFE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1C917501AF60266002EBAFE /* UIKit.framework */; };
@@ -22,6 +24,13 @@
 		A1C917711AF60266002EBAFE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1C917501AF60266002EBAFE /* UIKit.framework */; };
 		A1C917791AF60266002EBAFE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A1C917771AF60266002EBAFE /* InfoPlist.strings */; };
 		A1C9177B1AF60266002EBAFE /* WBTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A1C9177A1AF60266002EBAFE /* WBTests.m */; };
+		A1D773DC1AF74A7F0015108C /* checked.png in Resources */ = {isa = PBXBuildFile; fileRef = A1D773DA1AF74A7F0015108C /* checked.png */; };
+		A1D773DD1AF74A7F0015108C /* unchecked.png in Resources */ = {isa = PBXBuildFile; fileRef = A1D773DB1AF74A7F0015108C /* unchecked.png */; };
+		A565BF1A1B085F1F00599974 /* dataManipulatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A565BF191B085F1F00599974 /* dataManipulatorViewController.m */; };
+		A565BF1D1B085F4500599974 /* addViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A565BF1C1B085F4500599974 /* addViewController.m */; };
+		A565BF201B085F8F00599974 /* editViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A565BF1F1B085F8F00599974 /* editViewController.m */; };
+		A5B4F35E1B07046300ED5DB0 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5B4F35D1B07046300ED5DB0 /* CoreData.framework */; };
+		A5B4F3611B0704CE00ED5DB0 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A5B4F35F1B0704CE00ED5DB0 /* Model.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +44,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A102EBC51B006BFB00646844 /* comChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = comChart.h; sourceTree = "<group>"; };
+		A102EBC61B006BFB00646844 /* comChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = comChart.m; sourceTree = "<group>"; };
+		A102EBC81B007A6F00646844 /* GlobalVars.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalVars.h; sourceTree = "<group>"; };
+		A102EBC91B007A6F00646844 /* GlobalVars.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalVars.m; sourceTree = "<group>"; };
 		A1C917491AF60266002EBAFE /* WB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1C9174C1AF60266002EBAFE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A1C9174E1AF60266002EBAFE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -55,6 +68,16 @@
 		A1C917761AF60266002EBAFE /* WBTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WBTests-Info.plist"; sourceTree = "<group>"; };
 		A1C917781AF60266002EBAFE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A1C9177A1AF60266002EBAFE /* WBTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBTests.m; sourceTree = "<group>"; };
+		A1D773DA1AF74A7F0015108C /* checked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checked.png; sourceTree = "<group>"; };
+		A1D773DB1AF74A7F0015108C /* unchecked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unchecked.png; sourceTree = "<group>"; };
+		A565BF181B085F1F00599974 /* dataManipulatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dataManipulatorViewController.h; sourceTree = "<group>"; };
+		A565BF191B085F1F00599974 /* dataManipulatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dataManipulatorViewController.m; sourceTree = "<group>"; };
+		A565BF1B1B085F4500599974 /* addViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = addViewController.h; sourceTree = "<group>"; };
+		A565BF1C1B085F4500599974 /* addViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = addViewController.m; sourceTree = "<group>"; };
+		A565BF1E1B085F8F00599974 /* editViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = editViewController.h; sourceTree = "<group>"; };
+		A565BF1F1B085F8F00599974 /* editViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = editViewController.m; sourceTree = "<group>"; };
+		A5B4F35D1B07046300ED5DB0 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		A5B4F3601B0704CE00ED5DB0 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5B4F35E1B07046300ED5DB0 /* CoreData.framework in Frameworks */,
 				A1C9174F1AF60266002EBAFE /* CoreGraphics.framework in Frameworks */,
 				A1C917511AF60266002EBAFE /* UIKit.framework in Frameworks */,
 				A1C9174D1AF60266002EBAFE /* Foundation.framework in Frameworks */,
@@ -103,6 +127,7 @@
 		A1C9174B1AF60266002EBAFE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A5B4F35D1B07046300ED5DB0 /* CoreData.framework */,
 				A1C9174C1AF60266002EBAFE /* Foundation.framework */,
 				A1C9174E1AF60266002EBAFE /* CoreGraphics.framework */,
 				A1C917501AF60266002EBAFE /* UIKit.framework */,
@@ -114,6 +139,7 @@
 		A1C917521AF60266002EBAFE /* WB */ = {
 			isa = PBXGroup;
 			children = (
+				A1D773D91AF74A460015108C /* Images */,
 				A1C9175B1AF60266002EBAFE /* comAppDelegate.h */,
 				A1C9175C1AF60266002EBAFE /* comAppDelegate.m */,
 				A1C9175E1AF60266002EBAFE /* Main_iPhone.storyboard */,
@@ -122,6 +148,16 @@
 				A1C917651AF60266002EBAFE /* comViewController.m */,
 				A1C917671AF60266002EBAFE /* Images.xcassets */,
 				A1C917531AF60266002EBAFE /* Supporting Files */,
+				A102EBC51B006BFB00646844 /* comChart.h */,
+				A102EBC61B006BFB00646844 /* comChart.m */,
+				A102EBC81B007A6F00646844 /* GlobalVars.h */,
+				A102EBC91B007A6F00646844 /* GlobalVars.m */,
+				A565BF181B085F1F00599974 /* dataManipulatorViewController.h */,
+				A565BF191B085F1F00599974 /* dataManipulatorViewController.m */,
+				A565BF1B1B085F4500599974 /* addViewController.h */,
+				A565BF1C1B085F4500599974 /* addViewController.m */,
+				A565BF1E1B085F8F00599974 /* editViewController.h */,
+				A565BF1F1B085F8F00599974 /* editViewController.m */,
 			);
 			path = WB;
 			sourceTree = "<group>";
@@ -133,6 +169,7 @@
 				A1C917551AF60266002EBAFE /* InfoPlist.strings */,
 				A1C917581AF60266002EBAFE /* main.m */,
 				A1C9175A1AF60266002EBAFE /* WB-Prefix.pch */,
+				A5B4F35F1B0704CE00ED5DB0 /* Model.xcdatamodeld */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -153,6 +190,15 @@
 				A1C917771AF60266002EBAFE /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A1D773D91AF74A460015108C /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				A1D773DA1AF74A7F0015108C /* checked.png */,
+				A1D773DB1AF74A7F0015108C /* unchecked.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,6 +249,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "___FULLUSERNAME___";
 				TargetAttributes = {
+					A1C917481AF60266002EBAFE = {
+						DevelopmentTeam = VBW44T669R;
+					};
 					A1C9176C1AF60266002EBAFE = {
 						TestTargetID = A1C917481AF60266002EBAFE;
 					};
@@ -232,9 +281,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1D773DC1AF74A7F0015108C /* checked.png in Resources */,
 				A1C917631AF60266002EBAFE /* Main_iPad.storyboard in Resources */,
 				A1C917681AF60266002EBAFE /* Images.xcassets in Resources */,
 				A1C917601AF60266002EBAFE /* Main_iPhone.storyboard in Resources */,
+				A1D773DD1AF74A7F0015108C /* unchecked.png in Resources */,
 				A1C917571AF60266002EBAFE /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,9 +305,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A102EBCA1B007A6F00646844 /* GlobalVars.m in Sources */,
 				A1C917661AF60266002EBAFE /* comViewController.m in Sources */,
 				A1C9175D1AF60266002EBAFE /* comAppDelegate.m in Sources */,
+				A102EBC71B006BFB00646844 /* comChart.m in Sources */,
+				A565BF201B085F8F00599974 /* editViewController.m in Sources */,
 				A1C917591AF60266002EBAFE /* main.m in Sources */,
+				A565BF1D1B085F4500599974 /* addViewController.m in Sources */,
+				A5B4F3611B0704CE00ED5DB0 /* Model.xcdatamodeld in Sources */,
+				A565BF1A1B085F1F00599974 /* dataManipulatorViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,10 +448,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WB/WB-Prefix.pch";
 				INFOPLIST_FILE = "WB/WB-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -404,10 +465,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WB/WB-Prefix.pch";
 				INFOPLIST_FILE = "WB/WB-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -471,6 +536,7 @@
 				A1C917801AF60266002EBAFE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A1C917811AF60266002EBAFE /* Build configuration list for PBXNativeTarget "WBTests" */ = {
 			isa = XCConfigurationList;
@@ -479,8 +545,22 @@
 				A1C917831AF60266002EBAFE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A5B4F35F1B0704CE00ED5DB0 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A5B4F3601B0704CE00ED5DB0 /* Model.xcdatamodel */,
+			);
+			currentVersion = A5B4F3601B0704CE00ED5DB0 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = A1C917411AF60266002EBAFE /* Project object */;
 }
