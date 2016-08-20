@@ -34,23 +34,23 @@
 
 GlobalVars *globals;
 
-@synthesize rb1,radiobutton2,radiobutton3,radiobutton4,myAircraftname;
+@synthesize rb1,radiobutton2,radiobutton3,radiobutton4,radiobutton5,radiobutton6,myAircraftname;
 @synthesize myRow1arm,myRow2arm,myRow3arm,myFuelarm,myPodarm,myAftcargoarm;
 
 int selected=0;
-float maxgross[]={3800,3600,3800,3600};
-float emptywt[]={2224,2250,2261,2223};
-float emptymom[]={79575,90900,88374,90566};
-float fwdlimit[]={31,33,33,33};
-float fwdlimitwt[]={2200,2500,2500,2500};
-float fwdlimitgross[]={42.7,42.5,44.2,42.5};
-float aftlimit[]={49.0,49.7,49.7,49.7};
-float row1arm[]={36,34,34,34};
-float row2arm[]={76,74,74,74};
-float row3arm[]={106,100,100,100};
-float fuelarm[]={48,48,48,48};
-float podarm[]={-5.5,4.5,4.5,4.5};
-float aftcargoarm[]={129,127,127,127};
+float maxgross[]={3800,3600,3800,3600,3600,3800};
+float emptywt[]={2253,2244,2281,2277,2205,2253};
+float emptymom[]={79252,91876,88372,94340,86975,79252};
+float fwdlimit[]={31,33,33,33,33,31};
+float fwdlimitwt[]={2200,2500,2500,2500,2500,2200};
+float fwdlimitgross[]={42.7,42.5,44.2,42.5,42.5,42.7};
+float aftlimit[]={49.0,49.7,49.7,49.7,49.7,49.0};
+float row1arm[]={36,34,34,34,34,36};
+float row2arm[]={76,74,74,74,74,76};
+float row3arm[]={106,100,100,100,100,106};
+float fuelarm[]={48,48,48,48,48,48};
+float podarm[]={-5.5,4.5,4.5,4.5,4.5,-5.5};
+float aftcargoarm[]={129,127,127,127,127,129};
 float fuel,r1,r2,r3,aftcargo, pod;
 
 
@@ -63,7 +63,7 @@ float fuel,r1,r2,r3,aftcargo, pod;
     globals = [GlobalVars sharedInstance];
 	[self.scroller setScrollEnabled:YES];
     [self.scroller setContentSize:CGSizeMake(320,800)];
-    _aircraftName = [NSMutableArray arrayWithObjects:@"N91025",@"N36GB",@"N710MH",@"N756ZV",nil];
+    _aircraftName = [NSMutableArray arrayWithObjects:@"N91025",@"N36GB",@"N710MH",@"N756ZV",@"N7138Q",@"N9957M",nil];
     myAircraftname=_aircraftName[0];
     globals.myMaxgross=maxgross[0];
     myAftcargoarm=aftcargoarm[0];
@@ -95,7 +95,7 @@ float fuel,r1,r2,r3,aftcargo, pod;
     _fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"Aircraft"];
     self.aircrafts = [[_managedObjectContext executeFetchRequest:_fetchRequest error:nil] mutableCopy];
     if (self.aircrafts.count==0) [self initStore];
-    for (int i=0;i<4;i++){
+    for (int i=0;i<6;i++){
       if (self.aircrafts.count>i){
         _aircraft = [self.aircrafts objectAtIndex:i];
         [_aircraftName replaceObjectAtIndex:i withObject:[NSString stringWithFormat:@"%@",[_aircraft valueForKey:@"aircraftName"]]];
@@ -168,7 +168,28 @@ float fuel,r1,r2,r3,aftcargo, pod;
     [radiobutton4 addTarget:self action:@selector(radiobuttonSelected:) forControlEvents:UIControlEventTouchUpInside];
     
     
+    //radiobutton5 = [[UIButton alloc] initWithFrame:CGRectMake(140, 30, 55, 55)];
+    [radiobutton5 setTag:4];
+    [radiobutton5 setTitle:[_aircraftName objectAtIndex:4] forState:UIControlStateNormal];
+    //[rb1 setTitle:@"N710MH" forState:UIControlStateNormal];
+    radiobutton5.titleLabel.font = [UIFont systemFontOfSize:12.0];
+    [radiobutton5 setTitleColor: [UIColor blackColor] forState:UIControlStateNormal];
+    [radiobutton5 setTitleEdgeInsets: UIEdgeInsetsMake(80, 0, 0, 0)];
+    [radiobutton5 setBackgroundImage:[UIImage imageNamed:@"unchecked.png"] forState:UIControlStateNormal];
+    [radiobutton5 setBackgroundImage:[UIImage imageNamed:@"checked.png"] forState:UIControlStateSelected];
+    [radiobutton5 addTarget:self action:@selector(radiobuttonSelected:) forControlEvents:UIControlEventTouchUpInside];
     
+    
+    //radiobutton4 = [[UIButton alloc] initWithFrame:CGRectMake(210, 30, 55, 55)];
+    [radiobutton6 setTag:5];
+    [radiobutton6 setTitle:[_aircraftName objectAtIndex:5] forState:UIControlStateNormal];
+    //[rb1 setTitle:@"N756ZV" forState:UIControlStateNormal];
+    radiobutton6.titleLabel.font = [UIFont systemFontOfSize:12.0];
+    [radiobutton6 setTitleColor: [UIColor blackColor] forState:UIControlStateNormal];
+    [radiobutton6 setTitleEdgeInsets: UIEdgeInsetsMake(80, 0, 0, 0)];
+    [radiobutton6 setBackgroundImage:[UIImage imageNamed:@"unchecked.png"] forState:UIControlStateNormal];
+    [radiobutton6 setBackgroundImage:[UIImage imageNamed:@"checked.png"] forState:UIControlStateSelected];
+    [radiobutton6 addTarget:self action:@selector(radiobuttonSelected:) forControlEvents:UIControlEventTouchUpInside];
 
 }
 
@@ -310,6 +331,8 @@ float fuel,r1,r2,r3,aftcargo, pod;
                 [radiobutton2 setSelected:NO];
                 [radiobutton3 setSelected:NO];
                 [radiobutton4 setSelected:NO];
+                [radiobutton5 setSelected:NO];
+                [radiobutton6 setSelected:NO];
             }
             break;
         case 1:
@@ -319,6 +342,8 @@ float fuel,r1,r2,r3,aftcargo, pod;
                 [radiobutton2 setSelected:YES];
                 [radiobutton3 setSelected:NO];
                 [radiobutton4 setSelected:NO];
+                [radiobutton5 setSelected:NO];
+                [radiobutton6 setSelected:NO];
             }
             break;
         case 2:
@@ -328,6 +353,8 @@ float fuel,r1,r2,r3,aftcargo, pod;
                 [radiobutton2 setSelected:NO];
                 [radiobutton3 setSelected:YES];
                 [radiobutton4 setSelected:NO];
+                [radiobutton5 setSelected:NO];
+                [radiobutton6 setSelected:NO];
             }
             break;
         case 3:
@@ -337,6 +364,30 @@ float fuel,r1,r2,r3,aftcargo, pod;
                 [radiobutton2 setSelected:NO];
                 [radiobutton3 setSelected:NO];
                 [radiobutton4 setSelected:YES];
+                [radiobutton5 setSelected:NO];
+                [radiobutton6 setSelected:NO];
+            }
+            break;
+        case 4:
+            if([radiobutton5 isSelected]==NO)
+            {
+                [rb1 setSelected:NO];
+                [radiobutton2 setSelected:NO];
+                [radiobutton3 setSelected:NO];
+                [radiobutton4 setSelected:NO];
+                [radiobutton5 setSelected:YES];
+                [radiobutton6 setSelected:NO];
+            }
+            break;
+        case 5:
+            if([radiobutton6 isSelected]==NO)
+            {
+                [rb1  setSelected:NO];
+                [radiobutton2 setSelected:NO];
+                [radiobutton3 setSelected:NO];
+                [radiobutton4 setSelected:NO];
+                [radiobutton5 setSelected:NO];
+                [radiobutton6 setSelected:YES];
             }
             break;
         default:

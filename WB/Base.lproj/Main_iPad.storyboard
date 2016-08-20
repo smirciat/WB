@@ -22,72 +22,72 @@
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <subviews>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fuel (gallons): 30 " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cdD-hr-4Fx">
-                                                <rect key="frame" x="9" y="138" width="159" height="21"/>
+                                                <rect key="frame" x="8" y="195" width="159" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total:" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Jup-br-19a">
-                                                <rect key="frame" x="9" y="695" width="280" height="82"/>
+                                                <rect key="frame" x="9" y="749" width="280" height="82"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Row One:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8WY-I3-JtT">
-                                                <rect key="frame" x="9" y="228" width="159" height="21"/>
+                                                <rect key="frame" x="8" y="285" width="159" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="600" id="PpP-kN-Rn5">
-                                                <rect key="frame" x="6" y="353" width="274" height="31"/>
+                                                <rect key="frame" x="5" y="410" width="274" height="31"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <connections>
                                                     <action selector="sliderRowTwoChanged:" destination="vXZ-lx-hvc" eventType="valueChanged" id="L6Q-4g-6Ap"/>
                                                 </connections>
                                             </slider>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Row Two:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="avn-L3-TDC">
-                                                <rect key="frame" x="9" y="324" width="159" height="21"/>
+                                                <rect key="frame" x="8" y="381" width="159" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="600" id="J11-4h-a2j">
-                                                <rect key="frame" x="7" y="454" width="274" height="31"/>
+                                                <rect key="frame" x="7" y="508" width="274" height="31"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <connections>
                                                     <action selector="sliderRowThreeChanged:" destination="vXZ-lx-hvc" eventType="valueChanged" id="h4l-G1-JtK"/>
                                                 </connections>
                                             </slider>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Row Three:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="WUq-L4-TnD">
-                                                <rect key="frame" x="9" y="425" width="159" height="21"/>
+                                                <rect key="frame" x="9" y="479" width="159" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aft Cargo:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="psk-3z-Gnv">
-                                                <rect key="frame" x="9" y="529" width="159" height="21"/>
+                                                <rect key="frame" x="9" y="583" width="159" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="200" id="IKv-TB-NoS">
-                                                <rect key="frame" x="7" y="558" width="274" height="31"/>
+                                                <rect key="frame" x="7" y="612" width="274" height="31"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <connections>
                                                     <action selector="sliderAftCargoChanged:" destination="vXZ-lx-hvc" eventType="valueChanged" id="3ep-SQ-X2f"/>
                                                 </connections>
                                             </slider>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Belly Pod/Nose:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tlt-h1-h5K">
-                                                <rect key="frame" x="9" y="628" width="159" height="21"/>
+                                                <rect key="frame" x="9" y="682" width="159" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="300" id="f4h-1I-jYo">
-                                                <rect key="frame" x="7" y="657" width="274" height="31"/>
+                                                <rect key="frame" x="7" y="711" width="274" height="31"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <connections>
                                                     <action selector="sliderPodChanged:" destination="vXZ-lx-hvc" eventType="valueChanged" id="XJE-PQ-vUo"/>
@@ -95,6 +95,13 @@
                                             </slider>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="cKF-ru-Fw8">
                                                 <rect key="frame" x="9" y="0.0" width="55" height="55"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Empty">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="mLj-ZK-hiJ">
+                                                <rect key="frame" x="48" y="94" width="55" height="55"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="Empty">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -115,14 +122,14 @@
                                                 </state>
                                             </button>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="600" id="QCo-in-fSR">
-                                                <rect key="frame" x="7" y="257" width="274" height="31"/>
+                                                <rect key="frame" x="6" y="314" width="274" height="31"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <connections>
                                                     <action selector="sliderRowOneChanged:" destination="vXZ-lx-hvc" eventType="valueChanged" id="dXK-VW-ODL"/>
                                                 </connections>
                                             </slider>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="30" minValue="0.0" maxValue="106" id="gNV-qC-ayx">
-                                                <rect key="frame" x="7" y="167" width="274" height="31"/>
+                                                <rect key="frame" x="6" y="224" width="274" height="31"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <connections>
                                                     <action selector="sliderFuelChanged:" destination="vXZ-lx-hvc" eventType="valueChanged" id="524-zF-TqS"/>
@@ -136,47 +143,54 @@
                                                 </state>
                                             </button>
                                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="30" maximumValue="106" id="utP-fX-uof">
-                                                <rect key="frame" x="184" y="138" width="94" height="29"/>
+                                                <rect key="frame" x="183" y="195" width="94" height="29"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <connections>
                                                     <action selector="stepperFuelChanged:" destination="vXZ-lx-hvc" eventType="valueChanged" id="8U1-QQ-ojg"/>
                                                 </connections>
                                             </stepper>
                                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="600" id="vy1-rF-aBU">
-                                                <rect key="frame" x="185" y="228" width="94" height="29"/>
+                                                <rect key="frame" x="184" y="285" width="94" height="29"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <connections>
                                                     <action selector="stepperRowOneChanged:" destination="vXZ-lx-hvc" eventType="valueChanged" id="e4e-Pk-baP"/>
                                                 </connections>
                                             </stepper>
                                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="600" id="A3R-2b-IqJ">
-                                                <rect key="frame" x="184" y="324" width="94" height="29"/>
+                                                <rect key="frame" x="183" y="381" width="94" height="29"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <connections>
                                                     <action selector="stepperRowTwoChanged:" destination="vXZ-lx-hvc" eventType="valueChanged" id="Bvl-QF-YH3"/>
                                                 </connections>
                                             </stepper>
                                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="600" id="EIA-dH-7Wt">
-                                                <rect key="frame" x="184" y="425" width="94" height="29"/>
+                                                <rect key="frame" x="184" y="479" width="94" height="29"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <connections>
                                                     <action selector="stepperRowThreeChanged:" destination="vXZ-lx-hvc" eventType="valueChanged" id="tdY-Dl-Jh9"/>
                                                 </connections>
                                             </stepper>
                                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="200" id="3ng-dJ-EsL">
-                                                <rect key="frame" x="184" y="529" width="94" height="29"/>
+                                                <rect key="frame" x="184" y="583" width="94" height="29"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <connections>
                                                     <action selector="stepperAftCargoChanged:" destination="vXZ-lx-hvc" eventType="valueChanged" id="kYc-Aq-n1d"/>
                                                 </connections>
                                             </stepper>
                                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="300" id="JOX-ym-x9p">
-                                                <rect key="frame" x="184" y="628" width="94" height="29"/>
+                                                <rect key="frame" x="184" y="682" width="94" height="29"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <connections>
                                                     <action selector="stepperPodChanged:" destination="vXZ-lx-hvc" eventType="valueChanged" id="dWa-st-3my"/>
                                                 </connections>
                                             </stepper>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Vyk-3f-Ntd">
+                                                <rect key="frame" x="133" y="94" width="55" height="55"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Empty">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                     </view>
@@ -226,6 +240,8 @@
                         <outlet property="radiobutton2" destination="uWr-Nb-JQT" id="y5v-dq-Ohn"/>
                         <outlet property="radiobutton3" destination="MaZ-OQ-MUg" id="0J4-7X-clD"/>
                         <outlet property="radiobutton4" destination="oLO-Vp-W5q" id="mAl-Zv-UDl"/>
+                        <outlet property="radiobutton5" destination="mLj-ZK-hiJ" id="R3G-Qf-PgD"/>
+                        <outlet property="radiobutton6" destination="Vyk-3f-Ntd" id="sqE-5h-JkP"/>
                         <outlet property="rb1" destination="cKF-ru-Fw8" id="l7s-iz-go9"/>
                         <outlet property="scroller" destination="RKC-3s-voN" id="3yx-HY-Ea1"/>
                         <outlet property="sliderAftCargo" destination="IKv-TB-NoS" id="TjM-Ej-mhd"/>
