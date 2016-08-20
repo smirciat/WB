@@ -80,6 +80,13 @@ float fuel,r1,r2,r3,aftcargo, pod;
     myRow3arm=row3arm[0];
     globals.totalWeight=0;
     globals.cg=0;
+    
+    self.stepperFuel.autorepeat = YES;
+    self.stepperRowOne.autorepeat = YES;
+    self.stepperRowTwo.autorepeat = YES;
+    self.stepperRowThree.autorepeat = YES;
+    self.stepperAftCargo.autorepeat = YES;
+    self.stepperPod.autorepeat = YES;
 }
 
 -(void)viewDidAppear:(BOOL)animated{
@@ -182,42 +189,90 @@ float fuel,r1,r2,r3,aftcargo, pod;
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
 - (IBAction)sliderFuelChanged:(id)sender {
+    [self.stepperFuel setValue:self.sliderFuel.value];
     //fuel=self.sliderFuel.value;
     NSString *sliderValue = [NSString stringWithFormat:@"%.f",self.sliderFuel.value];
     self.labelFuel.text=[NSString stringWithFormat:@"%@%@", @"Fuel (gallons): ", sliderValue];
     
     [self setTotal];
 }
+- (IBAction)stepperFuelChanged:(UIStepper *)sender {
+    [self.sliderFuel setValue:sender.value];
+    NSString *sliderValue = [NSString stringWithFormat:@"%.f",self.sliderFuel.value];
+    self.labelFuel.text=[NSString stringWithFormat:@"%@%@", @"Fuel (gallons): ", sliderValue];
+    
+    [self setTotal];
+}
 - (IBAction)sliderRowOneChanged:(id)sender {
+    [self.stepperRowOne setValue:self.sliderRowOne.value];
+    NSString *sliderValue = [NSString stringWithFormat:@"%.f",self.sliderRowOne.value];
+    self.labelRowOne.text=[NSString stringWithFormat:@"%@%@", @"Row One: ", sliderValue];
+    
+    [self setTotal];
+}
+- (IBAction)stepperRowOneChanged:(UIStepper *)sender {
+    [self.sliderRowOne setValue:sender.value];
     NSString *sliderValue = [NSString stringWithFormat:@"%.f",self.sliderRowOne.value];
     self.labelRowOne.text=[NSString stringWithFormat:@"%@%@", @"Row One: ", sliderValue];
     
     [self setTotal];
 }
 - (IBAction)sliderRowTwoChanged:(id)sender {
+    [self.stepperRowTwo setValue:self.sliderRowTwo.value];
+    NSString *sliderValue = [NSString stringWithFormat:@"%.f",self.sliderRowTwo.value];
+    self.labelRowTwo.text=[NSString stringWithFormat:@"%@%@", @"Row Two: ", sliderValue];
+    
+    [self setTotal];
+}
+- (IBAction)stepperRowTwoChanged:(UIStepper *)sender {
+    [self.sliderRowTwo setValue:sender.value];
     NSString *sliderValue = [NSString stringWithFormat:@"%.f",self.sliderRowTwo.value];
     self.labelRowTwo.text=[NSString stringWithFormat:@"%@%@", @"Row Two: ", sliderValue];
     
     [self setTotal];
 }
 - (IBAction)sliderRowThreeChanged:(id)sender {
+    [self.stepperRowThree setValue:self.sliderRowThree.value];
+    NSString *sliderValue = [NSString stringWithFormat:@"%.f",self.sliderRowThree.value];
+    self.labelRowThree.text=[NSString stringWithFormat:@"%@%@", @"Row Three: ", sliderValue];
+    
+    [self setTotal];
+}
+- (IBAction)stepperRowThreeChanged:(UIStepper *)sender {
+    [self.sliderRowThree setValue:sender.value];
     NSString *sliderValue = [NSString stringWithFormat:@"%.f",self.sliderRowThree.value];
     self.labelRowThree.text=[NSString stringWithFormat:@"%@%@", @"Row Three: ", sliderValue];
     
     [self setTotal];
 }
 - (IBAction)sliderAftCargoChanged:(id)sender {
+    [self.stepperAftCargo setValue:self.sliderAftCargo.value];
+    NSString *sliderValue = [NSString stringWithFormat:@"%.f",self.sliderAftCargo.value];
+    self.labelAftCargo.text=[NSString stringWithFormat:@"%@%@", @"Aft Cargo: ", sliderValue];
+    
+    [self setTotal];
+}
+- (IBAction)stepperAftCargoChanged:(UIStepper *)sender {
+    [self.sliderAftCargo setValue:sender.value];
     NSString *sliderValue = [NSString stringWithFormat:@"%.f",self.sliderAftCargo.value];
     self.labelAftCargo.text=[NSString stringWithFormat:@"%@%@", @"Aft Cargo: ", sliderValue];
     
     [self setTotal];
 }
 - (IBAction)sliderPodChanged:(id)sender {
+    [self.stepperPod setValue:self.sliderPod.value];
     NSString *sliderValue = [NSString stringWithFormat:@"%.f",self.sliderPod.value];
     self.labelPod.text=[NSString stringWithFormat:@"%@%@", @"Belly Pod/Nose: ", sliderValue];
     
     [self setTotal];
 
+}
+- (IBAction)stepperPodChanged:(UIStepper *)sender {
+    [self.sliderPod setValue:sender.value];
+    NSString *sliderValue = [NSString stringWithFormat:@"%.f",self.sliderPod.value];
+    self.labelPod.text=[NSString stringWithFormat:@"%@%@", @"Belly Pod/Nose: ", sliderValue];
+    
+    [self setTotal];
 }
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {

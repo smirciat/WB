@@ -38,6 +38,12 @@
 @property (weak, nonatomic) IBOutlet UISlider *sliderAftCargo;
 @property (weak, nonatomic) IBOutlet UISlider *sliderPod;
 
+@property (weak, nonatomic) IBOutlet UIStepper *stepperFuel;
+@property (weak, nonatomic) IBOutlet UIStepper *stepperRowOne;
+@property (weak, nonatomic) IBOutlet UIStepper *stepperRowTwo;
+@property (weak, nonatomic) IBOutlet UIStepper *stepperRowThree;
+@property (weak, nonatomic) IBOutlet UIStepper *stepperAftCargo;
+@property (weak, nonatomic) IBOutlet UIStepper *stepperPod;
 
 
     -(void)radiobuttonSelected:(id)sender;
