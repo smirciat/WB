@@ -422,7 +422,7 @@ float fuel,r1,r2,r3,aftcargo, pod;
 -(void) initStore{
   NSManagedObjectContext *context = [self managedObjectContext];
   NSManagedObject *newAircraft;
-  for (int i=0;i<4;i++){
+  for (int i=0;i<6;i++){
      newAircraft= [NSEntityDescription insertNewObjectForEntityForName:@"Aircraft" inManagedObjectContext:context];
     
     [newAircraft setValue:[_aircraftName objectAtIndex:i] forKey:@"aircraftName"];
