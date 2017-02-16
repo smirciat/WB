@@ -35,6 +35,7 @@
 GlobalVars *globals;
 
 @synthesize rb1,radiobutton2,radiobutton3,radiobutton4,radiobutton5,radiobutton6,myAircraftname;
+@synthesize a,a1,a2,a3,a4,a5,a6;
 @synthesize myRow1arm,myRow2arm,myRow3arm,myFuelarm,myPodarm,myAftcargoarm;
 
 int selected=0;
@@ -116,6 +117,89 @@ float fuel,r1,r2,r3,aftcargo, pod;
       }
     }
        
+    //seat configutation radio buttons
+    
+    //A
+    [a setTag:10];
+    if (a1.selected==NO&&a2.selected==NO&&a3.selected==NO&&a4.selected==NO&&a5.selected==NO&&a6.selected==NO) {
+        //[self setTotal];
+        a.selected=YES;
+    }
+    [a setTitle:@"A" forState:UIControlStateNormal];
+    a.titleLabel.font = [UIFont systemFontOfSize:12.0];
+    [a setTitleColor: [UIColor blackColor] forState:UIControlStateNormal];
+    
+    [a setTitleEdgeInsets: UIEdgeInsetsMake(80, 0, 0, 0)];
+    [a setBackgroundImage:[UIImage imageNamed:@"seat-radio-off.png"] forState:UIControlStateNormal];
+    [a setBackgroundImage:[UIImage imageNamed:@"seat-radio-on.png"] forState:UIControlStateSelected];
+    [a addTarget:self action:@selector(seatButtonSelected:) forControlEvents:UIControlEventTouchUpInside];
+    
+    //A1
+    [a1 setTag:11];
+    [a1 setTitle:@"A-1" forState:UIControlStateNormal];
+    a1.titleLabel.font = [UIFont systemFontOfSize:12.0];
+    [a1 setTitleColor: [UIColor blackColor] forState:UIControlStateNormal];
+    
+    [a1 setTitleEdgeInsets: UIEdgeInsetsMake(80, 0, 0, 0)];
+    [a1 setBackgroundImage:[UIImage imageNamed:@"seat-radio-off.png"] forState:UIControlStateNormal];
+    [a1 setBackgroundImage:[UIImage imageNamed:@"seat-radio-on.png"] forState:UIControlStateSelected];
+    [a1 addTarget:self action:@selector(seatButtonSelected:) forControlEvents:UIControlEventTouchUpInside];
+    
+    //A2
+    [a2 setTag:12];
+    [a2 setTitle:@"A-2" forState:UIControlStateNormal];
+    a2.titleLabel.font = [UIFont systemFontOfSize:12.0];
+    [a2 setTitleColor: [UIColor blackColor] forState:UIControlStateNormal];
+    
+    [a2 setTitleEdgeInsets: UIEdgeInsetsMake(80, 0, 0, 0)];
+    [a2 setBackgroundImage:[UIImage imageNamed:@"seat-radio-off.png"] forState:UIControlStateNormal];
+    [a2 setBackgroundImage:[UIImage imageNamed:@"seat-radio-on.png"] forState:UIControlStateSelected];
+    [a2 addTarget:self action:@selector(seatButtonSelected:) forControlEvents:UIControlEventTouchUpInside];
+    
+    //A3
+    [a3 setTag:13];
+    [a3 setTitle:@"A-3" forState:UIControlStateNormal];
+    a3.titleLabel.font = [UIFont systemFontOfSize:12.0];
+    [a3 setTitleColor: [UIColor blackColor] forState:UIControlStateNormal];
+    
+    [a3 setTitleEdgeInsets: UIEdgeInsetsMake(80, 0, 0, 0)];
+    [a3 setBackgroundImage:[UIImage imageNamed:@"seat-radio-off.png"] forState:UIControlStateNormal];
+    [a3 setBackgroundImage:[UIImage imageNamed:@"seat-radio-on.png"] forState:UIControlStateSelected];
+    [a3 addTarget:self action:@selector(seatButtonSelected:) forControlEvents:UIControlEventTouchUpInside];
+    
+    //A4
+    [a4 setTag:14];
+    [a4 setTitle:@"A-4" forState:UIControlStateNormal];
+    a4.titleLabel.font = [UIFont systemFontOfSize:12.0];
+    [a4 setTitleColor: [UIColor blackColor] forState:UIControlStateNormal];
+    
+    [a4 setTitleEdgeInsets: UIEdgeInsetsMake(80, 0, 0, 0)];
+    [a4 setBackgroundImage:[UIImage imageNamed:@"seat-radio-off.png"] forState:UIControlStateNormal];
+    [a4 setBackgroundImage:[UIImage imageNamed:@"seat-radio-on.png"] forState:UIControlStateSelected];
+    [a4 addTarget:self action:@selector(seatButtonSelected:) forControlEvents:UIControlEventTouchUpInside];
+    
+    //A5
+    [a5 setTag:15];
+    [a5 setTitle:@"A-5" forState:UIControlStateNormal];
+    a5.titleLabel.font = [UIFont systemFontOfSize:12.0];
+    [a5 setTitleColor: [UIColor blackColor] forState:UIControlStateNormal];
+    
+    [a5 setTitleEdgeInsets: UIEdgeInsetsMake(80, 0, 0, 0)];
+    [a5 setBackgroundImage:[UIImage imageNamed:@"seat-radio-off.png"] forState:UIControlStateNormal];
+    [a5 setBackgroundImage:[UIImage imageNamed:@"seat-radio-on.png"] forState:UIControlStateSelected];
+    [a5 addTarget:self action:@selector(seatButtonSelected:) forControlEvents:UIControlEventTouchUpInside];
+    
+    //A6
+    [a6 setTag:16];
+    [a6 setTitle:@"A-6" forState:UIControlStateNormal];
+    a6.titleLabel.font = [UIFont systemFontOfSize:12.0];
+    [a6 setTitleColor: [UIColor blackColor] forState:UIControlStateNormal];
+    
+    [a6 setTitleEdgeInsets: UIEdgeInsetsMake(80, 0, 0, 0)];
+    [a6 setBackgroundImage:[UIImage imageNamed:@"seat-radio-off.png"] forState:UIControlStateNormal];
+    [a6 setBackgroundImage:[UIImage imageNamed:@"seat-radio-on.png"] forState:UIControlStateSelected];
+    [a6 addTarget:self action:@selector(seatButtonSelected:) forControlEvents:UIControlEventTouchUpInside];
+    
     //radio buttons
     [rb1 setTag:0];
     if (radiobutton2.selected==NO&&radiobutton3.selected==NO&&radiobutton4.selected==NO) {
@@ -123,7 +207,6 @@ float fuel,r1,r2,r3,aftcargo, pod;
         rb1.selected=YES;
     }
     [rb1 setTitle:[_aircraftName objectAtIndex:0] forState:UIControlStateNormal];
-    //[rb1 setTitle:@"N91025" forState:UIControlStateNormal];
     rb1.titleLabel.font = [UIFont systemFontOfSize:12.0];
     [rb1 setTitleColor: [UIColor blackColor] forState:UIControlStateNormal];
 
@@ -302,6 +385,10 @@ float fuel,r1,r2,r3,aftcargo, pod;
         addViewController *avc = segue.destinationViewController;
         avc.aircraft  = selectedAircraft;
     }
+}
+
+-(void)seatButtonSelected:(id)sender{
+    selected = [sender tag];
 }
 
 -(void)radiobuttonSelected:(id)sender{

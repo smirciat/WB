@@ -25,6 +25,14 @@
 @property (strong, nonatomic) IBOutlet UIButton *radiobutton5;
 @property (strong, nonatomic) IBOutlet UIButton *radiobutton6;
 
+@property (strong, nonatomic) IBOutlet UIButton *a;
+@property (strong, nonatomic) IBOutlet UIButton *a1;
+@property (strong, nonatomic) IBOutlet UIButton *a2;
+@property (strong, nonatomic) IBOutlet UIButton *a3;
+@property (strong, nonatomic) IBOutlet UIButton *a4;
+@property (strong, nonatomic) IBOutlet UIButton *a5;
+@property (strong, nonatomic) IBOutlet UIButton *a6;
+
 @property (weak, nonatomic) IBOutlet UILabel *labelFuel;
 @property (weak, nonatomic) IBOutlet UILabel *labelRowOne;
 @property (weak, nonatomic) IBOutlet UILabel *labelRowTwo;

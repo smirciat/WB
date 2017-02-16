@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		99B46BBD1E55790C0098FFBA /* seat-radio-off.png in Resources */ = {isa = PBXBuildFile; fileRef = 99B46BBC1E55790C0098FFBA /* seat-radio-off.png */; };
+		99B46BBF1E55791B0098FFBA /* seat-radio-on.png in Resources */ = {isa = PBXBuildFile; fileRef = 99B46BBE1E55791B0098FFBA /* seat-radio-on.png */; };
 		A102EBC71B006BFB00646844 /* comChart.m in Sources */ = {isa = PBXBuildFile; fileRef = A102EBC61B006BFB00646844 /* comChart.m */; };
 		A102EBCA1B007A6F00646844 /* GlobalVars.m in Sources */ = {isa = PBXBuildFile; fileRef = A102EBC91B007A6F00646844 /* GlobalVars.m */; };
 		A1C9174D1AF60266002EBAFE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1C9174C1AF60266002EBAFE /* Foundation.framework */; };
@@ -44,6 +46,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		99B46BBC1E55790C0098FFBA /* seat-radio-off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "seat-radio-off.png"; path = "../../../Downloads/seat-radio-off.png"; sourceTree = "<group>"; };
+		99B46BBE1E55791B0098FFBA /* seat-radio-on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "seat-radio-on.png"; path = "../../../Downloads/seat-radio-on.png"; sourceTree = "<group>"; };
 		A102EBC51B006BFB00646844 /* comChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = comChart.h; sourceTree = "<group>"; };
 		A102EBC61B006BFB00646844 /* comChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = comChart.m; sourceTree = "<group>"; };
 		A102EBC81B007A6F00646844 /* GlobalVars.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalVars.h; sourceTree = "<group>"; };
@@ -195,6 +199,8 @@
 		A1D773D91AF74A460015108C /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				99B46BBC1E55790C0098FFBA /* seat-radio-off.png */,
+				99B46BBE1E55791B0098FFBA /* seat-radio-on.png */,
 				A1D773DA1AF74A7F0015108C /* checked.png */,
 				A1D773DB1AF74A7F0015108C /* unchecked.png */,
 			);
@@ -283,10 +289,12 @@
 			files = (
 				A1D773DC1AF74A7F0015108C /* checked.png in Resources */,
 				A1C917631AF60266002EBAFE /* Main_iPad.storyboard in Resources */,
+				99B46BBD1E55790C0098FFBA /* seat-radio-off.png in Resources */,
 				A1C917681AF60266002EBAFE /* Images.xcassets in Resources */,
 				A1C917601AF60266002EBAFE /* Main_iPhone.storyboard in Resources */,
 				A1D773DD1AF74A7F0015108C /* unchecked.png in Resources */,
 				A1C917571AF60266002EBAFE /* InfoPlist.strings in Resources */,
+				99B46BBF1E55791B0098FFBA /* seat-radio-on.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
