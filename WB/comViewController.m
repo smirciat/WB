@@ -36,9 +36,13 @@ GlobalVars *globals;
 
 @synthesize rb1,radiobutton2,radiobutton3,radiobutton4,radiobutton5,radiobutton6,myAircraftname;
 @synthesize a,a1,a2,a3,a4,a5,a6;
+@synthesize frontLeft,frontRight,midLeft,midRight,rearLeft,rearRight;
 @synthesize myRow1arm,myRow2arm,myRow3arm,myFuelarm,myPodarm,myAftcargoarm;
 
-int selected=0;
+long selected=0;
+long aircraftIndex=0;
+long seatWeight=12;
+long seatIndex=10;
 float maxgross[]={3800,3600,3800,3600,3600,3800};
 float emptywt[]={2253,2244,2281,2277,2205,2253};
 float emptymom[]={79252,91876,88372,94340,86975,79252};
@@ -200,9 +204,47 @@ float fuel,r1,r2,r3,aftcargo, pod;
     [a6 setBackgroundImage:[UIImage imageNamed:@"seat-radio-on.png"] forState:UIControlStateSelected];
     [a6 addTarget:self action:@selector(seatButtonSelected:) forControlEvents:UIControlEventTouchUpInside];
     
+    //seat indicators
+    //frontLeft
+    [frontLeft setTitle:@"" forState:UIControlStateNormal];
+    [frontLeft setBackgroundImage:[UIImage imageNamed:@"white.png"] forState:UIControlStateNormal];
+    [frontLeft setBackgroundImage:[UIImage imageNamed:@"blue.png"] forState:UIControlStateSelected];
+    frontLeft.selected=YES;
+    [frontLeft addTarget:self action:@selector(indicatorButtonSelected:) forControlEvents:UIControlEventTouchUpInside];
+    
+    [frontRight setTitle:@"" forState:UIControlStateNormal];
+    [frontRight setBackgroundImage:[UIImage imageNamed:@"white.png"] forState:UIControlStateNormal];
+    [frontRight setBackgroundImage:[UIImage imageNamed:@"blue.png"] forState:UIControlStateSelected];
+    frontRight.selected=YES;
+    [frontRight addTarget:self action:@selector(indicatorButtonSelected:) forControlEvents:UIControlEventTouchUpInside];
+    
+    [midLeft setTitle:@"" forState:UIControlStateNormal];
+    [midLeft setBackgroundImage:[UIImage imageNamed:@"white.png"] forState:UIControlStateNormal];
+    [midLeft setBackgroundImage:[UIImage imageNamed:@"blue.png"] forState:UIControlStateSelected];
+    midLeft.selected=YES;
+    [midLeft addTarget:self action:@selector(indicatorButtonSelected:) forControlEvents:UIControlEventTouchUpInside];
+    
+    [midRight setTitle:@"" forState:UIControlStateNormal];
+    [midRight setBackgroundImage:[UIImage imageNamed:@"white.png"] forState:UIControlStateNormal];
+    [midRight setBackgroundImage:[UIImage imageNamed:@"blue.png"] forState:UIControlStateSelected];
+    midRight.selected=YES;
+    [midRight addTarget:self action:@selector(indicatorButtonSelected:) forControlEvents:UIControlEventTouchUpInside];
+    
+    [rearLeft setTitle:@"" forState:UIControlStateNormal];
+    [rearLeft setBackgroundImage:[UIImage imageNamed:@"white.png"] forState:UIControlStateNormal];
+    [rearLeft setBackgroundImage:[UIImage imageNamed:@"blue.png"] forState:UIControlStateSelected];
+    rearLeft.selected=YES;
+    [rearLeft addTarget:self action:@selector(indicatorButtonSelected:) forControlEvents:UIControlEventTouchUpInside];
+
+    [rearRight setTitle:@"" forState:UIControlStateNormal];
+    [rearRight setBackgroundImage:[UIImage imageNamed:@"white.png"] forState:UIControlStateNormal];
+    [rearRight setBackgroundImage:[UIImage imageNamed:@"blue.png"] forState:UIControlStateSelected];
+    rearRight.selected=YES;
+    [rearRight addTarget:self action:@selector(indicatorButtonSelected:) forControlEvents:UIControlEventTouchUpInside];
+    
     //radio buttons
     [rb1 setTag:0];
-    if (radiobutton2.selected==NO&&radiobutton3.selected==NO&&radiobutton4.selected==NO) {
+    if (radiobutton2.selected==NO&&radiobutton3.selected==NO&&radiobutton4.selected==NO&&radiobutton5.selected==NO&&radiobutton6.selected==NO) {
         [self setTotal];
         rb1.selected=YES;
     }
@@ -387,12 +429,137 @@ float fuel,r1,r2,r3,aftcargo, pod;
     }
 }
 
+-(void)indicatorButtonSelected:(id)sender{
+    
+}
+
 -(void)seatButtonSelected:(id)sender{
-    selected = [sender tag];
+    seatIndex = [sender tag];
+    switch ([sender tag]) {
+        case 10:
+            if([a isSelected]==NO)
+            {
+                [a setSelected:YES];
+                [a1 setSelected:NO];
+                [a2 setSelected:NO];
+                [a3 setSelected:NO];
+                [a4 setSelected:NO];
+                [a5 setSelected:NO];
+                [a6 setSelected:NO];
+                [midLeft setSelected:YES];
+                [midRight setSelected:YES];
+                [rearRight setSelected:YES];
+                [rearLeft setSelected:YES];
+            }
+            break;
+        case 11:
+            if([a1 isSelected]==NO)
+            {
+                [a1 setSelected:YES];
+                [a setSelected:NO];
+                [a2 setSelected:NO];
+                [a3 setSelected:NO];
+                [a4 setSelected:NO];
+                [a5 setSelected:NO];
+                [a6 setSelected:NO];
+                [midLeft setSelected:YES];
+                [midRight setSelected:YES];
+                [rearRight setSelected:YES];
+                [rearLeft setSelected:NO];
+            }
+            break;
+        case 12:
+            if([a2 isSelected]==NO)
+            {
+                [a2 setSelected:YES];
+                [a1 setSelected:NO];
+                [a setSelected:NO];
+                [a3 setSelected:NO];
+                [a4 setSelected:NO];
+                [a5 setSelected:NO];
+                [a6 setSelected:NO];
+                [midLeft setSelected:YES];
+                [midRight setSelected:YES];
+                [rearRight setSelected:NO];
+                [rearLeft setSelected:NO];
+            }
+            break;
+        case 13:
+            if([a3 isSelected]==NO)
+            {
+                [a3 setSelected:YES];
+                [a1 setSelected:NO];
+                [a2 setSelected:NO];
+                [a setSelected:NO];
+                [a4 setSelected:NO];
+                [a5 setSelected:NO];
+                [a6 setSelected:NO];
+                [midLeft setSelected:YES];
+                [midRight setSelected:NO];
+                [rearRight setSelected:NO];
+                [rearLeft setSelected:NO];
+            }
+            break;
+        case 14:
+            if([a4 isSelected]==NO)
+            {
+                [a4 setSelected:YES];
+                [a1 setSelected:NO];
+                [a2 setSelected:NO];
+                [a3 setSelected:NO];
+                [a setSelected:NO];
+                [a5 setSelected:NO];
+                [a6 setSelected:NO];
+                [midLeft setSelected:NO];
+                [midRight setSelected:NO];
+                [rearRight setSelected:NO];
+                [rearLeft setSelected:NO];
+            }
+            break;
+        case 15:
+            if([a5 isSelected]==NO)
+            {
+                [a5 setSelected:YES];
+                [a1 setSelected:NO];
+                [a2 setSelected:NO];
+                [a3 setSelected:NO];
+                [a4 setSelected:NO];
+                [a setSelected:NO];
+                [a6 setSelected:NO];
+                [midLeft setSelected:YES];
+                [midRight setSelected:NO];
+                [rearRight setSelected:YES];
+                [rearLeft setSelected:NO];
+            }
+            break;
+        case 16:
+            if([a6 isSelected]==NO)
+            {
+                [a6 setSelected:YES];
+                [a1 setSelected:NO];
+                [a2 setSelected:NO];
+                [a3 setSelected:NO];
+                [a4 setSelected:NO];
+                [a5 setSelected:NO];
+                [a setSelected:NO];
+                [midLeft setSelected:YES];
+                [midRight setSelected:NO];
+                [rearRight setSelected:YES];
+                [rearLeft setSelected:YES];
+            }
+            break;
+        default:
+            break;
+    }
+    
+    [self setSeatConfig:seatIndex];
+    [self setTotal];
+
 }
 
 -(void)radiobuttonSelected:(id)sender{
     long z=[sender tag];
+    aircraftIndex=z;
     myAftcargoarm=aftcargoarm[z];
     globals.myAftlimit=aftlimit[z];
     globals.myEmptymom=emptymom[z];
@@ -480,8 +647,93 @@ float fuel,r1,r2,r3,aftcargo, pod;
         default:
             break;
     }
+    [self setSeatConfig:seatIndex];
     [self setTotal];
     
+}
+
+-(void) setSeatConfig:(long)selected{
+    switch (selected) {
+        case 10:
+            globals.myEmptymom=emptymom[aircraftIndex];
+            globals.myEmptywt=emptywt[aircraftIndex];
+            break;
+        case 11:
+            if (aircraftIndex==0||aircraftIndex==5){
+                //stow all seats
+                globals.myEmptymom=emptymom[aircraftIndex]-seatWeight*row3arm[aircraftIndex]+seatWeight*aftcargoarm[aircraftIndex];
+                globals.myEmptywt=emptywt[aircraftIndex];
+            }
+            else {
+                //remove seat 6, stow rest
+                globals.myEmptymom=emptymom[aircraftIndex]-seatWeight*row3arm[aircraftIndex];
+                globals.myEmptywt=emptywt[aircraftIndex]-seatWeight;
+            }
+            break;
+        case 12:
+            if (aircraftIndex==0||aircraftIndex==5){
+                //stow all seats
+                globals.myEmptymom=emptymom[aircraftIndex]-2*seatWeight*row3arm[aircraftIndex]+2*seatWeight*aftcargoarm[aircraftIndex];
+                globals.myEmptywt=emptywt[aircraftIndex];
+            }
+            else {
+                //remove seat 6, stow rest
+                globals.myEmptymom=emptymom[aircraftIndex]-2*seatWeight*row3arm[aircraftIndex]+seatWeight*aftcargoarm[aircraftIndex];
+                globals.myEmptywt=emptywt[aircraftIndex]-seatWeight;
+            }
+            break;
+        case 13:
+            if (aircraftIndex==0||aircraftIndex==5){
+                //stow all seats
+                globals.myEmptymom=emptymom[aircraftIndex]-2*seatWeight*row3arm[aircraftIndex]+3*seatWeight*aftcargoarm[aircraftIndex]-seatWeight*row2arm[aircraftIndex];
+                globals.myEmptywt=emptywt[aircraftIndex];
+            }
+            else {
+                //remove seat 6, stow rest
+                globals.myEmptymom=emptymom[aircraftIndex]-2*seatWeight*row3arm[aircraftIndex]+2*seatWeight*aftcargoarm[aircraftIndex]-seatWeight*row2arm[aircraftIndex];
+                globals.myEmptywt=emptywt[aircraftIndex]-seatWeight;
+            }
+            break;
+        case 14:
+            if (aircraftIndex==0||aircraftIndex==5){
+                //stow all seats
+                globals.myEmptymom=emptymom[aircraftIndex]-2*seatWeight*row3arm[aircraftIndex]+4*seatWeight*aftcargoarm[aircraftIndex]-2*seatWeight*row2arm[aircraftIndex];
+                globals.myEmptywt=emptywt[aircraftIndex];
+            }
+            else {
+                //remove seat 6, stow rest
+                globals.myEmptymom=emptymom[aircraftIndex]-2*seatWeight*row3arm[aircraftIndex]+3*seatWeight*aftcargoarm[aircraftIndex]-2*seatWeight*row2arm[aircraftIndex];
+                globals.myEmptywt=emptywt[aircraftIndex]-seatWeight;
+            }
+            break;
+        case 15:
+            if (aircraftIndex==0||aircraftIndex==5){
+                //stow all seats
+                globals.myEmptymom=emptymom[aircraftIndex]-1*seatWeight*row3arm[aircraftIndex]+2*seatWeight*aftcargoarm[aircraftIndex]-1*seatWeight*row2arm[aircraftIndex];
+                globals.myEmptywt=emptywt[aircraftIndex];
+            }
+            else {
+                //remove seat 6, stow rest
+                globals.myEmptymom=emptymom[aircraftIndex]-1*seatWeight*row3arm[aircraftIndex]+1*seatWeight*aftcargoarm[aircraftIndex]-1*seatWeight*row2arm[aircraftIndex];
+                globals.myEmptywt=emptywt[aircraftIndex]-seatWeight;
+            }
+            break;
+        case 16:
+            if (aircraftIndex==0||aircraftIndex==5){
+                //stow all seats
+                globals.myEmptymom=emptymom[aircraftIndex]+1*seatWeight*aftcargoarm[aircraftIndex]-1*seatWeight*row2arm[aircraftIndex];
+                globals.myEmptywt=emptywt[aircraftIndex];
+            }
+            else {
+                //remove seat 6, stow rest
+                globals.myEmptymom=emptymom[aircraftIndex]+1*seatWeight*aftcargoarm[aircraftIndex]-1*seatWeight*row2arm[aircraftIndex];
+                globals.myEmptywt=emptywt[aircraftIndex]-seatWeight;
+            }
+            break;
+            
+        default:
+            break;
+    }
 }
 
 -(void) setTotal {

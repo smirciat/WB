@@ -33,7 +33,7 @@
     self.labelChart.text=[NSString stringWithFormat:@"%@%@%@%@",@"Total Weight: ",textTotalWeight,@",   CG: ",textCG];
     float topY=80;
     float leftX=45;
-    float chartHeight=480;
+    float chartHeight=320;
     float chartWidth=260;
     float maxX=MAX(globals.myAftlimit, globals.cg);
     float minX=MIN(globals.myFwdlimit, globals.cg);
