@@ -37,6 +37,12 @@
 		C35A6C831E57B4CC0099D832 /* white.png in Resources */ = {isa = PBXBuildFile; fileRef = C35A6C7F1E57B4CC0099D832 /* white.png */; };
 		C35A6C861E57B51B0099D832 /* seat-radio-off.png in Resources */ = {isa = PBXBuildFile; fileRef = C35A6C841E57B51B0099D832 /* seat-radio-off.png */; };
 		C35A6C871E57B51B0099D832 /* seat-radio-on.png in Resources */ = {isa = PBXBuildFile; fileRef = C35A6C851E57B51B0099D832 /* seat-radio-on.png */; };
+		C35A6C8F1E57D1370099D832 /* 206.png in Resources */ = {isa = PBXBuildFile; fileRef = C35A6C891E57D1370099D832 /* 206.png */; };
+		C35A6C901E57D1370099D832 /* blue.png in Resources */ = {isa = PBXBuildFile; fileRef = C35A6C8A1E57D1370099D832 /* blue.png */; };
+		C35A6C911E57D1370099D832 /* red.png in Resources */ = {isa = PBXBuildFile; fileRef = C35A6C8B1E57D1370099D832 /* red.png */; };
+		C35A6C921E57D1370099D832 /* seat-radio-off.png in Resources */ = {isa = PBXBuildFile; fileRef = C35A6C8C1E57D1370099D832 /* seat-radio-off.png */; };
+		C35A6C931E57D1370099D832 /* seat-radio-on.png in Resources */ = {isa = PBXBuildFile; fileRef = C35A6C8D1E57D1370099D832 /* seat-radio-on.png */; };
+		C35A6C941E57D1370099D832 /* white.png in Resources */ = {isa = PBXBuildFile; fileRef = C35A6C8E1E57D1370099D832 /* white.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +96,12 @@
 		C35A6C7F1E57B4CC0099D832 /* white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = white.png; path = ../../../../Documents/white.png; sourceTree = "<group>"; };
 		C35A6C841E57B51B0099D832 /* seat-radio-off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "seat-radio-off.png"; path = "../../../../Documents/seat-radio-off.png"; sourceTree = "<group>"; };
 		C35A6C851E57B51B0099D832 /* seat-radio-on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "seat-radio-on.png"; path = "../../../../Documents/seat-radio-on.png"; sourceTree = "<group>"; };
+		C35A6C891E57D1370099D832 /* 206.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 206.png; path = ../../../../Documents/206.png; sourceTree = "<group>"; };
+		C35A6C8A1E57D1370099D832 /* blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blue.png; path = ../../../../Documents/blue.png; sourceTree = "<group>"; };
+		C35A6C8B1E57D1370099D832 /* red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = red.png; path = ../../../../Documents/red.png; sourceTree = "<group>"; };
+		C35A6C8C1E57D1370099D832 /* seat-radio-off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "seat-radio-off.png"; path = "../../../../Documents/seat-radio-off.png"; sourceTree = "<group>"; };
+		C35A6C8D1E57D1370099D832 /* seat-radio-on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "seat-radio-on.png"; path = "../../../../Documents/seat-radio-on.png"; sourceTree = "<group>"; };
+		C35A6C8E1E57D1370099D832 /* white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = white.png; path = ../../../../Documents/white.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +163,12 @@
 		A1C917521AF60266002EBAFE /* WB */ = {
 			isa = PBXGroup;
 			children = (
+				C35A6C891E57D1370099D832 /* 206.png */,
+				C35A6C8A1E57D1370099D832 /* blue.png */,
+				C35A6C8B1E57D1370099D832 /* red.png */,
+				C35A6C8C1E57D1370099D832 /* seat-radio-off.png */,
+				C35A6C8D1E57D1370099D832 /* seat-radio-on.png */,
+				C35A6C8E1E57D1370099D832 /* white.png */,
 				A1D773D91AF74A460015108C /* Images */,
 				A1C9175B1AF60266002EBAFE /* comAppDelegate.h */,
 				A1C9175C1AF60266002EBAFE /* comAppDelegate.m */,
@@ -301,12 +319,18 @@
 			files = (
 				A1D773DC1AF74A7F0015108C /* checked.png in Resources */,
 				A1C917631AF60266002EBAFE /* Main_iPad.storyboard in Resources */,
+				C35A6C8F1E57D1370099D832 /* 206.png in Resources */,
+				C35A6C911E57D1370099D832 /* red.png in Resources */,
 				A1C917681AF60266002EBAFE /* Images.xcassets in Resources */,
 				C35A6C871E57B51B0099D832 /* seat-radio-on.png in Resources */,
+				C35A6C921E57D1370099D832 /* seat-radio-off.png in Resources */,
+				C35A6C901E57D1370099D832 /* blue.png in Resources */,
 				C35A6C821E57B4CC0099D832 /* red.png in Resources */,
 				C35A6C811E57B4CC0099D832 /* blue.png in Resources */,
 				C35A6C831E57B4CC0099D832 /* white.png in Resources */,
+				C35A6C941E57D1370099D832 /* white.png in Resources */,
 				A1C917601AF60266002EBAFE /* Main_iPhone.storyboard in Resources */,
+				C35A6C931E57D1370099D832 /* seat-radio-on.png in Resources */,
 				C35A6C801E57B4CC0099D832 /* 206.png in Resources */,
 				A1D773DD1AF74A7F0015108C /* unchecked.png in Resources */,
 				A1C917571AF60266002EBAFE /* InfoPlist.strings in Resources */,
