@@ -206,36 +206,42 @@ float fuel,r1,r2,r3,aftcargo, pod;
     
     //seat indicators
     //frontLeft
+    [frontLeft setTag:1];
     [frontLeft setTitle:@"" forState:UIControlStateNormal];
     [frontLeft setBackgroundImage:[UIImage imageNamed:@"white.png"] forState:UIControlStateNormal];
     [frontLeft setBackgroundImage:[UIImage imageNamed:@"blue.png"] forState:UIControlStateSelected];
     frontLeft.selected=YES;
     [frontLeft addTarget:self action:@selector(indicatorButtonSelected:) forControlEvents:UIControlEventTouchUpInside];
     
+    [frontRight setTag:2];
     [frontRight setTitle:@"" forState:UIControlStateNormal];
     [frontRight setBackgroundImage:[UIImage imageNamed:@"white.png"] forState:UIControlStateNormal];
     [frontRight setBackgroundImage:[UIImage imageNamed:@"blue.png"] forState:UIControlStateSelected];
     frontRight.selected=YES;
     [frontRight addTarget:self action:@selector(indicatorButtonSelected:) forControlEvents:UIControlEventTouchUpInside];
     
+    [midLeft setTag:3];
     [midLeft setTitle:@"" forState:UIControlStateNormal];
     [midLeft setBackgroundImage:[UIImage imageNamed:@"white.png"] forState:UIControlStateNormal];
     [midLeft setBackgroundImage:[UIImage imageNamed:@"blue.png"] forState:UIControlStateSelected];
     midLeft.selected=YES;
     [midLeft addTarget:self action:@selector(indicatorButtonSelected:) forControlEvents:UIControlEventTouchUpInside];
     
+    [midRight setTag:4];
     [midRight setTitle:@"" forState:UIControlStateNormal];
     [midRight setBackgroundImage:[UIImage imageNamed:@"white.png"] forState:UIControlStateNormal];
     [midRight setBackgroundImage:[UIImage imageNamed:@"blue.png"] forState:UIControlStateSelected];
     midRight.selected=YES;
     [midRight addTarget:self action:@selector(indicatorButtonSelected:) forControlEvents:UIControlEventTouchUpInside];
     
+    [rearLeft setTag:5];
     [rearLeft setTitle:@"" forState:UIControlStateNormal];
     [rearLeft setBackgroundImage:[UIImage imageNamed:@"white.png"] forState:UIControlStateNormal];
     [rearLeft setBackgroundImage:[UIImage imageNamed:@"blue.png"] forState:UIControlStateSelected];
     rearLeft.selected=YES;
     [rearLeft addTarget:self action:@selector(indicatorButtonSelected:) forControlEvents:UIControlEventTouchUpInside];
 
+    [rearRight setTag:6];
     [rearRight setTitle:@"" forState:UIControlStateNormal];
     [rearRight setBackgroundImage:[UIImage imageNamed:@"white.png"] forState:UIControlStateNormal];
     [rearRight setBackgroundImage:[UIImage imageNamed:@"blue.png"] forState:UIControlStateSelected];
@@ -430,7 +436,28 @@ float fuel,r1,r2,r3,aftcargo, pod;
 }
 
 -(void)indicatorButtonSelected:(id)sender{
-    
+    if ([sender tag] >2){
+        [a setSelected:NO];
+        [a1 setSelected:NO];
+        [a2 setSelected:NO];
+        [a3 setSelected:NO];
+        [a4 setSelected:NO];
+        [a5 setSelected:NO];
+        [a6 setSelected:NO];
+        switch ([sender tag]) {
+            case 3:
+                if ([midLeft isSelected]==YES){
+                    [midLeft setSelected:NO];
+                    
+                }
+                else {
+                    [midLeft setSelected:YES];
+                
+                }
+                break;
+                
+        }
+    }
 }
 
 -(void)seatButtonSelected:(id)sender{
