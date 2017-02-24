@@ -448,15 +448,62 @@ float fuel,r1,r2,r3,aftcargo, pod;
             case 3:
                 if ([midLeft isSelected]==YES){
                     [midLeft setSelected:NO];
-                    
+                    globals.myEmptymom=globals.myEmptymom-seatWeight*row2arm[aircraftIndex]+seatWeight*aftcargoarm[aircraftIndex];
+                    //globals.myEmptywt=emptywt[aircraftIndex];
                 }
                 else {
                     [midLeft setSelected:YES];
-                
+                    globals.myEmptymom=globals.myEmptymom+seatWeight*row2arm[aircraftIndex]-seatWeight*aftcargoarm[aircraftIndex];
                 }
                 break;
-                
+            case 4:
+                if ([midRight isSelected]==YES){
+                    [midRight setSelected:NO];
+                    globals.myEmptymom=globals.myEmptymom-seatWeight*row2arm[aircraftIndex]+seatWeight*aftcargoarm[aircraftIndex];
+                    //globals.myEmptywt=emptywt[aircraftIndex];
+                }
+                else {
+                    [midRight setSelected:YES];
+                    globals.myEmptymom=globals.myEmptymom+seatWeight*row2arm[aircraftIndex]-seatWeight*aftcargoarm[aircraftIndex];
+                }
+                break;
+            case 5:
+                if ([rearLeft isSelected]==YES){
+                    [rearLeft setSelected:NO];
+                    if (aircraftIndex>0&&aircraftIndex<5){
+                        globals.myEmptywt=globals.myEmptywt-seatWeight;
+                        globals.myEmptymom=globals.myEmptymom-seatWeight*row3arm[aircraftIndex];
+                    }
+                    else {
+                        globals.myEmptymom=globals.myEmptymom-seatWeight*row3arm[aircraftIndex]+seatWeight*aftcargoarm[aircraftIndex];
+                    }
+                }
+                else {
+                    [rearLeft setSelected:YES];
+                    if (aircraftIndex>0&&aircraftIndex<5){
+                        globals.myEmptywt=globals.myEmptywt+seatWeight;
+                        globals.myEmptymom=globals.myEmptymom+seatWeight*row3arm[aircraftIndex];
+                    }
+                    else {
+                        globals.myEmptymom=globals.myEmptymom+seatWeight*row3arm[aircraftIndex]-seatWeight*aftcargoarm[aircraftIndex];
+                    }
+                }
+                break;
+            case 6:
+                if ([rearRight isSelected]==YES){
+                    [rearRight setSelected:NO];
+                    globals.myEmptymom=globals.myEmptymom-seatWeight*row3arm[aircraftIndex]+seatWeight*aftcargoarm[aircraftIndex];
+                    //globals.myEmptywt=emptywt[aircraftIndex];
+                }
+                else {
+                    [rearRight setSelected:YES];
+                    globals.myEmptymom=globals.myEmptymom+seatWeight*row3arm[aircraftIndex]-seatWeight*aftcargoarm[aircraftIndex];
+                }
+                break;
+            default:
+                break;
         }
+        [self setTotal];
     }
 }
 

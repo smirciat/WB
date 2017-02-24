@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		99A55F9C1E6006A2007C91D7 /* seat-radio-off.png in Resources */ = {isa = PBXBuildFile; fileRef = 99A55F9A1E6006A2007C91D7 /* seat-radio-off.png */; };
+		99A55F9D1E6006A2007C91D7 /* seat-radio-on.png in Resources */ = {isa = PBXBuildFile; fileRef = 99A55F9B1E6006A2007C91D7 /* seat-radio-on.png */; };
+		99A55FA21E60085A007C91D7 /* 206.png in Resources */ = {isa = PBXBuildFile; fileRef = 99A55F9E1E60085A007C91D7 /* 206.png */; };
+		99A55FA31E60085A007C91D7 /* blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 99A55F9F1E60085A007C91D7 /* blue.png */; };
+		99A55FA41E60085A007C91D7 /* red.png in Resources */ = {isa = PBXBuildFile; fileRef = 99A55FA01E60085A007C91D7 /* red.png */; };
+		99A55FA51E60085A007C91D7 /* white.png in Resources */ = {isa = PBXBuildFile; fileRef = 99A55FA11E60085A007C91D7 /* white.png */; };
 		A102EBC71B006BFB00646844 /* comChart.m in Sources */ = {isa = PBXBuildFile; fileRef = A102EBC61B006BFB00646844 /* comChart.m */; };
 		A102EBCA1B007A6F00646844 /* GlobalVars.m in Sources */ = {isa = PBXBuildFile; fileRef = A102EBC91B007A6F00646844 /* GlobalVars.m */; };
 		A1C9174D1AF60266002EBAFE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1C9174C1AF60266002EBAFE /* Foundation.framework */; };
@@ -31,12 +37,6 @@
 		A565BF201B085F8F00599974 /* editViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A565BF1F1B085F8F00599974 /* editViewController.m */; };
 		A5B4F35E1B07046300ED5DB0 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5B4F35D1B07046300ED5DB0 /* CoreData.framework */; };
 		A5B4F3611B0704CE00ED5DB0 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A5B4F35F1B0704CE00ED5DB0 /* Model.xcdatamodeld */; };
-		C39366BF1E5D110000EE0AE6 /* 206.png in Resources */ = {isa = PBXBuildFile; fileRef = C39366B91E5D110000EE0AE6 /* 206.png */; };
-		C39366C01E5D110000EE0AE6 /* blue.png in Resources */ = {isa = PBXBuildFile; fileRef = C39366BA1E5D110000EE0AE6 /* blue.png */; };
-		C39366C11E5D110000EE0AE6 /* red.png in Resources */ = {isa = PBXBuildFile; fileRef = C39366BB1E5D110000EE0AE6 /* red.png */; };
-		C39366C21E5D110000EE0AE6 /* seat-radio-off.png in Resources */ = {isa = PBXBuildFile; fileRef = C39366BC1E5D110000EE0AE6 /* seat-radio-off.png */; };
-		C39366C31E5D110000EE0AE6 /* seat-radio-on.png in Resources */ = {isa = PBXBuildFile; fileRef = C39366BD1E5D110000EE0AE6 /* seat-radio-on.png */; };
-		C39366C41E5D110000EE0AE6 /* white.png in Resources */ = {isa = PBXBuildFile; fileRef = C39366BE1E5D110000EE0AE6 /* white.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +50,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		99A55F9A1E6006A2007C91D7 /* seat-radio-off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "seat-radio-off.png"; path = "../../seat-radio-off.png"; sourceTree = "<group>"; };
+		99A55F9B1E6006A2007C91D7 /* seat-radio-on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "seat-radio-on.png"; path = "../../seat-radio-on.png"; sourceTree = "<group>"; };
+		99A55F9E1E60085A007C91D7 /* 206.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 206.png; path = ../../206.png; sourceTree = "<group>"; };
+		99A55F9F1E60085A007C91D7 /* blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blue.png; path = ../../blue.png; sourceTree = "<group>"; };
+		99A55FA01E60085A007C91D7 /* red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = red.png; path = ../../red.png; sourceTree = "<group>"; };
+		99A55FA11E60085A007C91D7 /* white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = white.png; path = ../../white.png; sourceTree = "<group>"; };
 		A102EBC51B006BFB00646844 /* comChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = comChart.h; sourceTree = "<group>"; };
 		A102EBC61B006BFB00646844 /* comChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = comChart.m; sourceTree = "<group>"; };
 		A102EBC81B007A6F00646844 /* GlobalVars.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalVars.h; sourceTree = "<group>"; };
@@ -84,12 +90,6 @@
 		A565BF1F1B085F8F00599974 /* editViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = editViewController.m; sourceTree = "<group>"; };
 		A5B4F35D1B07046300ED5DB0 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		A5B4F3601B0704CE00ED5DB0 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
-		C39366B91E5D110000EE0AE6 /* 206.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 206.png; path = ../../../../Documents/206.png; sourceTree = "<group>"; };
-		C39366BA1E5D110000EE0AE6 /* blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blue.png; path = ../../../../Documents/blue.png; sourceTree = "<group>"; };
-		C39366BB1E5D110000EE0AE6 /* red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = red.png; path = ../../../../Documents/red.png; sourceTree = "<group>"; };
-		C39366BC1E5D110000EE0AE6 /* seat-radio-off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "seat-radio-off.png"; path = "../../../../Documents/seat-radio-off.png"; sourceTree = "<group>"; };
-		C39366BD1E5D110000EE0AE6 /* seat-radio-on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "seat-radio-on.png"; path = "../../../../Documents/seat-radio-on.png"; sourceTree = "<group>"; };
-		C39366BE1E5D110000EE0AE6 /* white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = white.png; path = ../../../../Documents/white.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,12 +207,12 @@
 		A1D773D91AF74A460015108C /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				C39366B91E5D110000EE0AE6 /* 206.png */,
-				C39366BA1E5D110000EE0AE6 /* blue.png */,
-				C39366BB1E5D110000EE0AE6 /* red.png */,
-				C39366BC1E5D110000EE0AE6 /* seat-radio-off.png */,
-				C39366BD1E5D110000EE0AE6 /* seat-radio-on.png */,
-				C39366BE1E5D110000EE0AE6 /* white.png */,
+				99A55F9E1E60085A007C91D7 /* 206.png */,
+				99A55F9F1E60085A007C91D7 /* blue.png */,
+				99A55FA01E60085A007C91D7 /* red.png */,
+				99A55FA11E60085A007C91D7 /* white.png */,
+				99A55F9A1E6006A2007C91D7 /* seat-radio-off.png */,
+				99A55F9B1E6006A2007C91D7 /* seat-radio-on.png */,
 				A1D773DA1AF74A7F0015108C /* checked.png */,
 				A1D773DB1AF74A7F0015108C /* unchecked.png */,
 			);
@@ -300,17 +300,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1D773DC1AF74A7F0015108C /* checked.png in Resources */,
+				99A55FA31E60085A007C91D7 /* blue.png in Resources */,
 				A1C917631AF60266002EBAFE /* Main_iPad.storyboard in Resources */,
+				99A55F9C1E6006A2007C91D7 /* seat-radio-off.png in Resources */,
+				99A55FA21E60085A007C91D7 /* 206.png in Resources */,
+				99A55FA51E60085A007C91D7 /* white.png in Resources */,
 				A1C917681AF60266002EBAFE /* Images.xcassets in Resources */,
-				C39366C11E5D110000EE0AE6 /* red.png in Resources */,
-				C39366C31E5D110000EE0AE6 /* seat-radio-on.png in Resources */,
-				C39366C41E5D110000EE0AE6 /* white.png in Resources */,
-				C39366C21E5D110000EE0AE6 /* seat-radio-off.png in Resources */,
-				C39366C01E5D110000EE0AE6 /* blue.png in Resources */,
 				A1C917601AF60266002EBAFE /* Main_iPhone.storyboard in Resources */,
-				C39366BF1E5D110000EE0AE6 /* 206.png in Resources */,
 				A1D773DD1AF74A7F0015108C /* unchecked.png in Resources */,
+				99A55FA41E60085A007C91D7 /* red.png in Resources */,
 				A1C917571AF60266002EBAFE /* InfoPlist.strings in Resources */,
+				99A55F9D1E6006A2007C91D7 /* seat-radio-on.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
